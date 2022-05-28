@@ -5,9 +5,114 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Shopping Cart</title>
+    <!-- Google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Custom CSS -->
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <main>
+        <h1>Shopping Cart</h1>
+        <hr> 
+        <div class="product-list">
+            <div class="product-img">
+                <img src="img/watch.jpg" alt="watch">
+            </div>
+            <div class="product-title">
+                <h3>Apple Watch Series 03</h3>
+                <p>Digital Watch</p>
+            </div>
+            <div class="product-amount">
+                <span id="watch-minus" class="minus"><i class="fa-solid fa-minus"></i></span>
+                <input id="watch-number" type="number" min="0" value="1">
+                <span id="watch-plus" class="plus"><i class="fa-solid fa-plus"></i></span>
+            </div>
+            <div class="product-price">
+                <h2>$<span id="watch-total">199</span></h2>
+            </div>
+            <div class="product-cancel">
+                <span class="cancel"><i class="fa-solid fa-xmark"></i></span>
+            </div>  
+        </div>
+        <hr> 
+        <div class="product-list">
+            <div class="product-img">
+                <img src="img/airpod.jpg" alt="airpod">
+            </div>
+            <div class="product-title">
+                <h3>Xiaomi AirDots Pro</h3>
+                <p>Airpods</p>
+            </div>
+            <div class="product-amount">
+                <span id="airpod-minus" class="minus"><i class="fa-solid fa-minus"></i></span>
+                <input id="airpod-number" type="number" min="0" value="1">
+                <span id="airpod-plus" class="plus"><i class="fa-solid fa-plus"></i></span>
+            </div>
+            <div class="product-price">
+                <h2>$<span id="airpod-total">12</span></h2>
+            </div>
+            <div class="product-cancel">
+                <span class="cancel"><i class="fa-solid fa-xmark"></i></span>
+            </div>  
+        </div>
+        <hr> 
+        <div class="product-list">
+            <div class="product-img">
+                <img src="img/phone.jpg" alt="phone">
+            </div>
+            <div class="product-title">
+                <h3>Oppo R17 Pro</h3>
+                <p>SmartPhone</p>
+            </div>
+            <div class="product-amount">
+                <span id="phone-minus" class="minus"><i class="fa-solid fa-minus"></i></span>
+                <input id="phone-number" type="number" min="0" value="1">
+                <span id="phone-plus" class="plus"><i class="fa-solid fa-plus"></i></span>
+            </div>
+            <div class="product-price">
+                <h2>$<span id="phone-total">999</span></h2>
+            </div>
+            <div class="product-cancel">
+                <span class="cancel"><i class="fa-solid fa-xmark"></i></span>
+            </div>  
+        </div>
+        <hr> 
+        <div class="product-total">
+            <div class="subtotal">
+                <div class="subtotal-title">
+                    <h4>Subtotal</h4>
+                </div>
+                <div class="subtotal-price">
+                    <h4>$<span id="subtotal-amount">0</span></h4>
+                </div>
+            </div>
+            <div class="tax">
+                <div class="tax-title">
+                    <h4>Tax</h4>
+                </div>
+                <div class="tax-price">
+                    <h4>$<span id="tax-amount">0</span></h4>
+                </div>
+            </div>
+            <hr>
+            <div class="total">
+                <div class="total-title">
+                    <h4>Total</h4>
+                </div>
+                <div class="total-price">
+                    <h4>$<span id="total-amount">0</span></h4>
+                </div>
+            </div>
+        </div>
+        <div class="checkout">
+            <span class="checkout-btn">Proceed to checkout</span>
+        </div>
+    </main>
     <script src="js/main.js"></script>
 </body>
 </html>
